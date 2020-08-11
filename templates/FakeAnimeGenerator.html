@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html>
+
+<head> 
+    <title>Fake Anime Generator</title> 
+</head>
+
+<body>
+   
+<h1>Fake Anime Generator</h1>
+
+<p>This page generates fake animes based on a number of Neural Networks trained on Top 100 Anime From AnimeList.com</p> 
+
+<p>Reload the page to generate a new fake</p>
+
+<p> </p>
+
+{% set file_name = postercounter +'posterimage.png' %}
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-mutk{font-family:"Arial Black", Gadget, sans-serif !important;;font-size:14px;text-align:left;vertical-align:top}
+.tg .tg-82bq{font-family:"Arial Black", Gadget, sans-serif !important;;font-size:14px;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-baqh" rowspan="4"><img src="{{ url_for('static', filename=file_name)}}" width="320" height="480"></th>
+    <th class="tg-82bq">Title:</th>
+    <th class="tg-mutk">{{ title }}</th>
+  </tr>
+  <tr>
+    <td class="tg-82bq">Genres:</td>
+    <td class="tg-mutk">{{genres}}</td>
+  </tr>
+  <tr>
+    <td class="tg-82bq">Rating:</td>
+    <td class="tg-mutk">{{ rating }}</td>
+  </tr>
+  <tr>
+    <td class="tg-82bq">Sypnosis:</td>
+    <td class="tg-mutk">{{ sypnosis }}</td>
+  </tr>
+</thead>
+</table>
+
+
+</body>
+
+</html>
+
