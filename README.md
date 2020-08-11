@@ -6,7 +6,9 @@ https://medium.com/@zhijingeu/building-an-amateur-machine-learning-web-app-what-
 
 and series of youtube videos here:
 https://youtu.be/4B8sGQgTUmg
+
 https://youtu.be/R_lVjGwUhIA
+
 https://youtu.be/_VNsYQfGz_I
 
 Description Of Files & Folders:
